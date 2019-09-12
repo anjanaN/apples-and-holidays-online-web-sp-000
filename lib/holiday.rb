@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holiday|
     holiday.each do |attribute, value|
-      if attribute.to_s.include?(" ")
+      if attribute.to_s.include?("_")
         attribute.split(" ")
         attribute.capitalize!
         attribute.join(" ")
