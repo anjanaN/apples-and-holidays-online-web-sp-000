@@ -83,7 +83,7 @@ def all_supplies_in_holidays(holiday_hash)
       attribute_array << attribute.to_s
       if attribute_array.include?("_")
         attribute_array.split("_")
-        #attribute.capitalize!
+        attribute.capitalize!
         attribute_array.join(" ")
         attribute = attribute_array[0]
       end
