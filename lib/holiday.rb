@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |attribute, value|
       if attribute.to_s.include?("_")
-        attribute.split("_")
+        attribute.to_s.split("_")
         attribute.capitalize!
         attribute.join("_")
       end
