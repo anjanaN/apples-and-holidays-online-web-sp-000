@@ -85,6 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
         attribute_array.split("_")
         #attribute.capitalize!
         attribute_array.join(" ")
+        attribute = attribute_array[0]
       end
       puts "#{season.to_s.capitalize!}:"
       puts "  #{attribute.to_s.capitalize!}: #{value.join(", ")}"
